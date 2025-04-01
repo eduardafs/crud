@@ -1,0 +1,23 @@
+### CRIA UM NOVO USUÁRIO
+POST http://localhost:3333/api/users/register
+Content-Type: application/json
+
+{
+  "name": "Flutter Figueiredo",
+  "email": "teste@cat.com",
+  "phone": "5551998274321"
+}
+### LISTA TODOS OS USUARIOS
+GET http://localhost:3333/api/users
+### OBTEM USUARIO POR ID 
+GET http://localhost:3333/api/users/0d81d960-7687-4cc8-abdc-0b42e249ecf9
+### ATUALIZA USUARIO
+PUT http://localhost:3333/api/users/a9a50733-f3bc-4d37-a16e-d747a3d5e387
+Content-Type: application/json
+
+{
+  "name": "Salem Bertolini San Martin", 
+  "phone": "5551998279876"
+}
+### DELETA UM USUARIO
+DELETE http://localhost:3333/api/users/a9a50733-f3bc-4d37-a16e-d747a3d5e387
